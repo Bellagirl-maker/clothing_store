@@ -7,4 +7,7 @@ const clothingSlice = createSlice({
             state.push(action.payload)
         },
     },
-})''
+});
+
+export const { addItem } = clothingSlice.actions;
+export default clothingSlice.reducer;
