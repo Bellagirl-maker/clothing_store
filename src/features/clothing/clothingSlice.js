@@ -3,6 +3,8 @@ const clothingSlice = createSlice({
     cname: 'clothing',
     initialState: [],
     reducers: {
-        addItem: 
-    }
-})
+        addItem: (state, action)=> {
+            state.push(action.payload)
+        },
+    },
+})''
